@@ -1,0 +1,345 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0D1028;
+}
+
+/* Mobile menu */
+.avaruus{
+    z-index: -1;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+}
+nav{
+    background-color: transparent;
+    padding: 5px 20px;
+    position: absolute ;
+    width: 100%;
+}
+ul.menu {
+    list-style-type: none;
+}
+a{
+    color: #E9EDFE;
+    text-decoration: none;
+}
+li.item:hover{
+    background-color: rgba(233, 237, 254, 0.5);
+}
+.menu li.item a:hover{
+    color:#0D1028;
+}
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a{
+    display: block;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle{
+    order: 1;
+}
+.item {
+    width: 100%;
+    text-align: start;
+    order: 3;
+    display: none;
+    transition: 0.5s;
+}
+.item.active{
+    display: block;
+}
+.menu li.toggle{
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+.toggle:hover{
+    background-color: rgba(233, 237, 254, 0.5);
+}
+/* .bars{
+    background: #E9EDFE;
+    display: inline-block;
+    height: 3px;
+    width: 30px;
+    position: relative;
+}
+.bars::before,.bars::after{
+    background: #E9EDFE;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 30px;
+    position: absolute;
+}
+.bars::before{
+    top: 8px;
+}
+.bars::after{
+    top: -8px;
+} */
+
+/* tablet menu*/
+@media all and (min-width: 468px){
+    .menu{
+        justify-content: flex-start;
+    }
+    .logo{
+        flex: 1;
+    }
+    .toggle{
+        order: 2;
+    }
+    .avaruus{
+        height: 350px;
+    }
+
+}
+/* desktop menu*/
+@media all and (min-width: 768px){
+    .item{
+        display: block;
+        width: auto;
+        order: 1;
+        background-color: transparent;
+    }
+    .toggle{
+        display: none;
+    }
+    .menu li{
+        padding: 15px 10px;
+        font-size: 20px;
+    }
+    .menu {
+        justify-content: space-evenly;
+    }
+    .avaruus{
+        height: 550px;
+    }
+}
+
+/* mobile esittely*/
+.esittely{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.esittely div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profiilikuva {
+    border-radius: 100%;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+}
+h1{
+    color: #E9EDFE;
+    padding: 15px 5px;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2{
+    color: #E9EDFE;
+    padding: 3vh 3vh;
+    font-size: 24px;
+    align-self: end;
+    
+}
+p{
+    color: #E9EDFE;
+    padding: 2vh 3vh;
+    margin-bottom: 2vh;
+    font-size: 16px;
+    line-height: 1.5;
+}
+ul li{
+    color: #E9EDFE;
+    font-size: 16px;
+}
+/* tablet esittely*/
+
+@media all and (min-width: 468px){
+    .profiilikuva{
+        width: 60%;
+        height: auto;
+    }
+    
+}
+
+/*desktop esittely*/
+@media all and (min-width: 768px){
+    .esittely{
+        flex-direction: row;
+        margin-bottom: 15vh;
+    }
+    .profiilikuva{
+        width: 375px;
+    }
+    .esittely div{
+        width: 50%;
+    }
+    .esittely div p{
+        font-size: 20px;
+    }
+    .esittely div h2{
+        font-size: 30px;
+    }
+
+}
+@media all and (min-width: 968px){
+    
+    .profiilikuva{
+        width: 500px;
+    }
+    
+
+}
+
+/* napit mobiili */
+div.nappulat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6vh;
+}
+.nappulat button{
+    background-color: transparent;
+    border: solid #E9EDFE;
+    color: #E9EDFE;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    width: 70%;
+    margin: 3vh;
+    transition: 0.5s;
+}
+.nappulat button:hover{
+    background-color:  rgba(233, 237, 254, 0.651);
+    color: #0D1028;
+}
+
+/*napit tablet*/
+@media all and (min-width: 468px){
+    .nappulat buttton{
+        width: 60%;
+    
+}
+}
+/* napit desktop */
+@media all and (min-width: 768px){
+    div.nappulat {
+        flex-direction: row;
+        margin-top: 6vh;
+    }
+    
+}
+
+/* footer mobiili*/
+
+footer{
+    background-color: #E9EDFE;
+    margin-top: 4vh;
+}
+footer p{
+    color: rgb(6, 8, 22);
+    padding-top: 7vh;
+    line-height: 2.0;
+}
+footer h6{
+    color: rgb(6, 8, 22);
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    padding: 3vh;
+}
+/* footer tablet*/
+@media all and (min-width: 468px){
+    footer p{
+        margin-left: 1em;
+    }   
+}
+/* footer desktop*/
+@media all and (min-width: 768px){
+    footer p{
+        margin-left: 2em;
+    }   
+}
+
+/* projektit mobile*/
+div.projektit{
+    display: flex;
+    flex-direction: column;
+}
+/* projektit tablet*/
+@media all and (min-width: 468px){
+    
+    
+}
+/* projektit desktop*/
+@media all and (min-width: 768px){
+    div.projektit{
+        flex-direction: row;
+    }
+    
+}
+
+/* cv mobile*/
+.cv2{
+    max-width: 50em;
+}
+.cv2 ul{
+    padding: 5px 20px;
+    margin-bottom: 2vh;
+    margin-inline-start: 2vh;
+}
+.cv2 ul li{
+    padding-left: 5px;
+}
+h1.cvheading{
+    font-size: 30px;
+}
+/* cv tablet*/
+@media all and (min-width: 468px){   
+    .cv2{
+        margin-left: 1em;
+    } 
+}
+/* cv desktop*/
+@media all and (min-width: 768px){
+    h1.cvheading{
+        font-size: 36px;
+    }
+    .cv2{
+        margin-left: 2em;
+    }
+}
+
+
+
