@@ -296,6 +296,11 @@ footer h6{
 div.projektit{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.projektit div{
+    width: 47%;
 }
 /* projektit tablet*/
 @media all and (min-width: 468px){
