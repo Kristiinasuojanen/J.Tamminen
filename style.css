@@ -159,8 +159,8 @@ li.item:hover{
 h1{
     color: #E9EDFE;
     padding: 15px 5px;
-    font-size: 36px;
-    text-align: center;
+    font-size: 30px;
+    text-align: start;
 }
 
 h2{
@@ -324,6 +324,13 @@ div.projektit{
 }
 h1.cvheading{
     font-size: 30px;
+    padding: 2vh 3vh;
+    line-height: 1.5;
+}
+h2.cvheading{
+    padding: 2vh 3vh;
+    line-height: 1.5;
+    margin-bottom: 3vh;
 }
 /* cv tablet*/
 @media all and (min-width: 468px){   
