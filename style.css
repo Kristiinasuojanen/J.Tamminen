@@ -271,6 +271,7 @@ footer p{
     color: rgb(6, 8, 22);
     padding-top: 7vh;
     line-height: 2.0;
+    margin-left: 1em;
 }
 footer h6{
     color: rgb(6, 8, 22);
@@ -281,9 +282,7 @@ footer h6{
 }
 /* footer tablet*/
 @media all and (min-width: 468px){
-    footer p{
-        margin-left: 1em;
-    }   
+     
 }
 /* footer desktop*/
 @media all and (min-width: 768px){
@@ -298,13 +297,17 @@ div.projektit{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 3vw;
 }
 div.projektit div{
-    width: 47%;
+    width: 95%;
+    align-self: center;
 }
 /* projektit tablet*/
 @media all and (min-width: 468px){
-    
+    div.projektit div{
+        width: 85%;
+    }
     
 }
 /* projektit desktop*/
@@ -312,7 +315,9 @@ div.projektit div{
     div.projektit{
         flex-direction: row;
     }
-    
+    div.projektit div{
+        width: 47%;
+    }
 }
 
 /* cv mobile*/
