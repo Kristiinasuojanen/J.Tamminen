@@ -303,6 +303,17 @@ div.projektit div{
     width: 95%;
     align-self: center;
 }
+
+ul.linkkeja li a{
+    color: skyblue;
+    text-decoration: underline;
+    
+}
+ul.linkkeja{
+    padding: 2vh 3vh;
+    margin-bottom: 2vh;
+}
+
 /* projektit tablet*/
 @media all and (min-width: 468px){
     div.projektit div{
